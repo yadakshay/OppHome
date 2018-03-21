@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/widget30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/detailsPropertyImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="2dp"
+                    android:src="@drawable/home_default" />
+
+                <!-- Property Details -->
+                <LinearLayout
+                    android:id="@+id/propertyDetailsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/detailsShortDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="@dimen/padding_5dp"
+                        android:paddingTop="@dimen/padding_5dp"
+                        android:text="Medium Text"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/buttonBackgroundDark"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detailsPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="@dimen/padding_5dp"
+                        android:text="Medium Text"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/buttonBackgroundDark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/detailsListed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingBottom="@dimen/padding_5dp"
+                        android:text="Medium Text"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/buttonBackgroundDark"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+                <!-- Property Location -->
+                <LinearLayout
+                    android:id="@+id/locationHolderLayout"
+                    style="@style/detailsLayoutContentStyle"
+                    android:clickable="true">
+
+                    <TextView
+                        style="@style/detailsTextViewHeader"
+                        android:drawablePadding="@dimen/margin_10dp"
+                        android:drawableRight="@drawable/icon_map_blue"
+                        android:text="Location" />
+
+                    <TextView
+                        android:id="@+id/detailsLocation"
+                        style="@style/detailsTextView"
+                        android:drawablePadding="@dimen/margin_10dp"
+                        android:drawableRight="@drawable/icon_arrow_map" />
+                </LinearLayout>
+
+
+                <!-- Property Bedrooms -->
+                <LinearLayout style="@style/detailsLayoutContentStyle">
+
+                    <TextView
+                        style="@style/detailsTextViewHeader"
+                        android:text="Bedrooms" />
+
+                    <TextView
+                        android:id="@+id/detailsBedroom"
+                        style="@style/detailsTextView" />
+                </LinearLayout>
+
+
+                <!-- Property Bathrooms -->
+
+                <LinearLayout style="@style/detailsLayoutContentStyle">
+
+                    <TextView
+                        style="@style/detailsTextViewHeader"
+                        android:text="Bathrooms" />
+
+                    <TextView
+                        android:id="@+id/detailsBathroom"
+                        style="@style/detailsTextView" />
+                </LinearLayout>
+
+
+                <!-- Property Prop Type -->
+                <LinearLayout style="@style/detailsLayoutContentStyle">
+
+                    <TextView
+                        style="@style/detailsTextViewHeader"
+                        android:text="Property Type" />
+
+                    <TextView
+                        android:id="@+id/detailsPropType"
+                        style="@style/detailsTextView" />
+                </LinearLayout>
+
+
+                <!-- Property Floor Area -->
+                <LinearLayout style="@style/detailsLayoutContentStyle">
+
+                    <TextView
+                        style="@style/detailsTextViewHeader"
+                        android:text="Floor Area" />
+
+                    <TextView
+                        android:id="@+id/detailsFloorArea"
+                        style="@style/detailsTextView" />
+                </LinearLayout>
+
+
+                <!-- Property Land Area -->
+                <LinearLayout style="@style/detailsLayoutContentStyle">
+
+                    <TextView
+                        style="@style/detailsTextViewHeader"
+                        android:text="Land Area" />
+
+                    <TextView
+                        android:id="@+id/detailsLandArea"
+                        style="@style/detailsTextView" />
+                </LinearLayout>
+
+
+                <!-- Property Land Area -->
+                <LinearLayout style="@style/detailsLayoutContentStyle">
+
+                    <TextView
+                        style="@style/detailsTextViewHeader"
+                        android:text="Parking" />
+
+                    <TextView
+                        android:id="@+id/detailsParking"
+                        style="@style/detailsTextView" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/detailsTextViewHeaderSmall"
+                    android:background="@color/colorGrey"
+                    android:padding="@dimen/margin_10dp"
+                    android:text="Description" />
+
+                <TextView
+                    android:id="@+id/detailsDescription"
+                    style="@style/detailsTextViewHeaderSmall"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:maxLines="100"
+                    android:paddingRight="@dimen/margin_10dp"
+                    android:scrollHorizontally="false"
+                    android:text="Description" />
+
+                <TextView
+                    style="@style/detailsTextViewHeaderSmall"
+                    android:background="@color/colorGrey"
+                    android:padding="@dimen/margin_10dp"
+                    android:text="OPEN HOME"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:id="@+id/viewingLayout0"
+                    style="@style/detailsLayoutContentStyle">
+
+                    <TextView
+                        android:id="@+id/detailsViewingDate0"
+                        style="@style/detailsTextViewHeader"
+                        android:layout_weight="0.4" />
+
+                    <TextView
+                        android:id="@+id/detailsViewingTime0"
+                        style="@style/detailsTextView"
+                        android:layout_weight="0.4" />
+
+                    <ImageView
+                        android:id="@+id/addToCalendar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="0.2"
+                        android:clickable="true"
+                        android:gravity="right"
+                        android:src="@drawable/icon_add_event" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viewingLayout1"
+                    style="@style/detailsLayoutContentStyle">
+
+                    <TextView
+                        android:id="@+id/detailsViewingDate1"
+                        style="@style/detailsTextViewHeader"
+                        android:layout_weight="0.4" />
+
+                    <TextView
+                        android:id="@+id/detailsViewingTime1"
+                        style="@style/detailsTextView"
+                        android:layout_weight="0.4" />
+
+                    <ImageView
+                        android:id="@+id/addToCalendar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="0.2"
+                        android:clickable="true"
+                        android:gravity="right"
+                        android:src="@drawable/icon_add_event" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viewingLayout2"
+                    style="@style/detailsLayoutContentStyle"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/detailsViewingDate2"
+                        style="@style/detailsTextViewHeader"
+                        android:layout_weight="0.4" />
+
+                    <TextView
+                        android:id="@+id/detailsViewingTime2"
+                        style="@style/detailsTextView"
+                        android:layout_weight="0.4" />
+
+                    <ImageView
+                        android:id="@+id/addToCalendar3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="0.2"
+                        android:clickable="true"
+                        android:gravity="right"
+                        android:src="@drawable/icon_add_event" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hazardsDisplayLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/detailsTextViewHeaderSmall"
+                        android:background="@color/colorGrey"
+                        android:padding="@dimen/margin_10dp"
+                        android:text="SECURITY HAZARDS"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginTop="4dp">
+
+                    <Button
+                        android:id="@+id/add_to_watchlist_button"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/action_add_to_watchlist" />
+
+                    <Button
+                        android:id="@+id/req_more_info_button"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/action_req_more_information" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/visit_openhome"
+                    style="@style/buttonStyle"
+                    android:layout_width="220dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/action_visit_openhome" android:layout_marginBottom="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/move_to_archive_button"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/action_moveto_archive" />
+
+                    <Button
+                        android:id="@+id/delete_button"
+                        style="@style/buttonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/action_delete_property" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/detailsPropertyWatchlistImage"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_watchlist_dark" />
+
+    </RelativeLayout>
+</LinearLayout>

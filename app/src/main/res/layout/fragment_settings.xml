@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_5dp">
+
+    <LinearLayout
+        android:id="@+id/agentSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ohSwitchUser_Menu"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/edit_text_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_switch_user"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:singleLine="true"
+            android:tag="switchUser"
+            android:text="@string/oh_switch_user"
+            android:textColor="@color/buttonBackgroundDark" />
+
+        <TextView
+            android:id="@+id/ohNearBy_Menu"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/edit_text_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_near_by"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:singleLine="true"
+            android:tag="Near By Open Homes"
+            android:text="@string/oh_near_By_openhomes"
+            android:textColor="@color/buttonBackgroundDark" android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/ohChangePassword_Menu"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/edit_text_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_change_password"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:singleLine="true"
+            android:tag="Logout"
+            android:text="@string/oh_change_password"
+            android:textColor="@color/buttonBackgroundDark" />
+
+        <TextView
+            android:id="@+id/ohPrivacyPolicy_Menu"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/edit_text_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_privacy_policy"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:singleLine="true"
+            android:tag="Logout"
+            android:text="@string/oh_privacy_policy"
+            android:textColor="@color/buttonBackgroundDark" />
+
+        <TextView
+            android:id="@+id/ohLogout_Menu"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/edit_text_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_logout"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:singleLine="true"
+            android:tag="Logout"
+            android:text="@string/oh_logout"
+            android:textColor="@color/buttonBackgroundDark" />
+
+        <TextView
+            android:id="@+id/ohCurrentListings_Menu" android:visibility="gone"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/edit_text_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_change_password"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:singleLine="true"
+            android:tag="current"
+            android:text="@string/oh_change_password"
+            android:textColor="@color/buttonBackgroundDark" />
+
+        <TextView
+            android:id="@+id/ohArchivedListings_Menu" android:visibility="gone"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:background="@drawable/edit_text_bg"
+            android:clickable="true"
+            android:drawableLeft="@drawable/icon_archived_listing"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:singleLine="true"
+            android:tag="archived"
+            android:text="@string/oh_archived_listings_menu"
+            android:textColor="@color/buttonBackgroundDark" />
+    </LinearLayout>
+
+
+</LinearLayout>

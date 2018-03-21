@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="afterDescendants" android:background="@color/colorOrange">
+
+    <ImageView
+        android:id="@+id/propertyImage"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_centerVertical="true"
+        android:background="#FFFFFF"
+        android:src="@drawable/home_default"  />
+
+    <RelativeLayout
+        android:id="@+id/propertyInfoRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_toRightOf="@+id/propertyImage"
+        android:background="#FFFFFF"
+        android:paddingLeft="@dimen/padding_5dp"
+        android:paddingRight="@dimen/padding_5dp"
+       >
+
+        <TextView
+            android:id="@+id/propertyShortDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/buttonBackgroundDark"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" android:paddingTop="1dp" />
+
+        <TextView
+            android:id="@+id/propertyAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/propertyShortDescription"
+            android:layout_above="@+id/propertyAskingPrice"
+            android:drawableLeft="@drawable/location_small"
+            android:drawablePadding="@dimen/padding_3dp"
+            android:textColor="@color/buttonBackgroundDark"
+            android:textSize="@dimen/text_size_mini_small"  />
+        <!--   android:drawableLeft="@drawable/businessname" -->
+        <TextView
+            android:id="@+id/propertyAskingPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/padding_5dp"
+            android:singleLine="true"
+            android:textColor="@color/buttonBackgroundDark"
+            android:textSize="@dimen/text_size_very_small"
+            android:textStyle="bold" android:layout_alignParentBottom="true" />
+        <!--
+                <CheckBox
+                    android:id="@+id/cbSpSelect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:button="@drawable/sp_selector"
+                    android:text="   " />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/cbSpSelect"
+                    android:text="@string/label.select"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_very_small" />
+        -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@+id/propertyInfoRelativeLayout"
+        android:layout_toRightOf="@+id/propertyImage"
+        android:orientation="horizontal" android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/propertyFloorArea"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/buttonBackgroundDark"
+            android:textSize="@dimen/text_size_very_small" />
+
+        <TextView
+            android:id="@+id/propertyBathrooms"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableLeft="@drawable/icon_bathroom"
+            android:textColor="@color/buttonBackgroundDark"
+            android:textSize="@dimen/text_size_very_small" />
+
+        <TextView
+            android:id="@+id/propertyBedrooms"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/icon_bedroom"
+            android:gravity="center"
+            android:textColor="@color/buttonBackgroundDark"
+            android:textSize="@dimen/text_size_very_small" />
+    </LinearLayout>
+
+</RelativeLayout>

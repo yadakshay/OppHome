@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/icon_gallery_selected" android:state_pressed="true"/>
+    <item android:drawable="@drawable/icon_gallery" />
+</selector>
+
+<!--
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="false">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" android:thickness="0dp">
+            <stroke android:width="0.75dp" android:color="@color/buttonBackgroundDark" />
+            <gradient android:angle="270" android:endColor="@color/colorBlueLight" android:startColor="@color/buttonBackgroundDark"></gradient>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <item android:state_selected="false" android:state_enabled="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" android:thickness="0dp">
+            <stroke android:width="0.75dp" android:color="@color/buttonBackgroundDark" />
+            <gradient android:angle="270" android:endColor="@color/colorBlueLight" android:startColor="@color/buttonBackgroundDark"></gradient>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+
+    <item android:state_pressed="true"  >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" android:thickness="0dp">
+            <stroke android:width="0.75dp" android:color="@color/colorOrange" />
+            <gradient android:angle="270" android:endColor="@color/lightOrange" android:startColor="@color/colorOrange"></gradient>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <item android:state_selected="true" android:state_enabled="true">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle" android:thickness="0dp">
+            <stroke android:width="0.75dp" android:color="@color/colorOrange" />
+            <gradient android:angle="270" android:endColor="@color/lightOrange" android:startColor="@color/colorOrange"></gradient>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+
+</selector>
+
+-->

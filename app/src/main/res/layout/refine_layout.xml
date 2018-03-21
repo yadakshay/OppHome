@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Refine Layout -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refineLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/refinePriceToggleTrigger"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tv_selector"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:onClick="">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/refinePriceResultTV"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Price"
+            android:textSize="@dimen/margin_15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/refinePriceResultTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:drawableRight="@drawable/icon_region_list_arrow"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/margin_10dp"
+            android:text="Any" />
+        <!--  android:textColor="@color/grey_very_light" -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/refinePriceToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_30dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/startPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:entries="@array/refine_price"></Spinner>
+
+        <Spinner
+            android:id="@+id/endPrice"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/refine_price"></Spinner>
+
+    </LinearLayout>
+
+
+    <!-- Refine Bedrooms -->
+    <RelativeLayout
+        android:id="@+id/refineBedroomToggleTrigger"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tv_selector"
+        android:clickable="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/refineBedroomsResultTV"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Bedrooms"
+            android:textSize="@dimen/margin_15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/refineBedroomsResultTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:drawableRight="@drawable/icon_region_list_arrow"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/margin_10dp"
+            android:text="Any" />
+        <!--  android:textColor="@color/grey_very_light" -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/refineBedroomToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_30dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/startBed"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:entries="@array/refine_bathrooms_bedrooms"></Spinner>
+
+        <Spinner
+            android:id="@+id/endBed"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/refine_bathrooms_bedrooms"></Spinner>
+
+    </LinearLayout>
+
+    <!-- Refine Bathrooms -->
+    <RelativeLayout
+        android:id="@+id/refineBathroomToggleTrigger"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tv_selector"
+        android:clickable="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/refineBathroomsResultTV"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Bathrooms"
+            android:textSize="@dimen/margin_15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/refineBathroomsResultTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:drawableRight="@drawable/icon_region_list_arrow"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/margin_10dp"
+            android:text="Any" />
+        <!--  android:textColor="@color/grey_very_light" -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/refineBathroomToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_30dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/startBath"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:entries="@array/refine_bathrooms_bedrooms"></Spinner>
+
+        <Spinner
+            android:id="@+id/endBath"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/refine_bathrooms_bedrooms"></Spinner>
+
+    </LinearLayout>
+
+    <!-- Refine Property Type -->
+    <RelativeLayout
+        android:id="@+id/refinePropertyTypeToggleTrigger"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/tv_selector"
+        android:clickable="true"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/refinePropertyTypeResultTV"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Property Type"
+            android:textSize="@dimen/margin_15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/refinePropertyTypeResultTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:drawableRight="@drawable/icon_region_list_arrow"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/margin_10dp"
+            android:text="Any" />
+        <!--  android:textColor="@color/grey_very_light" -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/refinePropertyToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="@dimen/margin_30dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Spinner
+            android:id="@+id/startProperty"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:entries="@array/refine_property_category"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/tv_selector">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/sortByTextView"
+            android:layout_weight="0.6"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Sort By"
+            android:textSize="@dimen/margin_15dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/sortBy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_weight="0.5"
+            android:entries="@array/sortByOptions"></Spinner>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/viewListingsButton2"
+        style="@style/buttonStyle"
+        android:layout_width="200dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="@dimen/margin_20dp"
+        android:text="@string/view_listings" />
+
+</LinearLayout>
+</ScrollView>

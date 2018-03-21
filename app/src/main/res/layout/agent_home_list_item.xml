@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/propertyImage"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:adjustViewBounds="true"
+        android:background="@color/colorOrange"
+        android:padding="@dimen/margin_2dp"
+        android:src="@drawable/home_default" />
+
+    <TextView
+        android:id="@+id/propertyShortDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:textColor="@color/buttonBackgroundDark"
+        android:textSize="@dimen/text_size_small"
+        android:textStyle="bold" />
+
+</LinearLayout>

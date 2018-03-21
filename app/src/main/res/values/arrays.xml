@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="items_array_expandable_level_one">
+        <item>Indoor Hazards</item>
+        <item>Outdoor Hazards</item>
+        <item>Other Hazards</item>
+    </string-array>
+    <string-array name="items_array_expandable_level_one_one_child">
+        <item>Kitchen</item>
+        <item>Bathroom</item>
+        <item>Main Bedroom</item>
+        <item>Additional Rooms</item>
+        <item>Ensuite</item>
+        <item>Study</item>
+        <item>Laundry</item>
+        <item>Internal Garrage</item>
+        <item>Rumpus</item>
+        <item>Hallway</item>
+        <item>Dining</item>
+        <item>Longue</item>
+    </string-array>
+    <string-array name="items_array_expandable_level_one_two_child">
+        <item>Level 1.2.1</item>
+        <item>Level 1.2.2</item>
+        <item>Level 1.2.3</item>
+    </string-array>
+    <string-array name="none"></string-array>
+    <string-array name="items_array_expandable_level_two">
+        <item>Second Level 01</item>
+        <item>Second Level 02</item>
+        <item>Second Level 03</item>
+        <item>Second Level 04</item>
+        <item>Second Level 05</item>
+        <item>Second Level 06</item>
+        <item>Second Level 07</item>
+    </string-array>
+    <string-array name="items_array_expandable_level_three">
+        <item>Slippery or uneven surface</item>
+        <item>Chemicals within reach</item>
+        <item>Exposed wires</item>
+        <item>Fire damage</item>
+        <item>Broken cupboard door</item>
+        <item>Broken door</item>
+        <item>Broken window</item>
+        <item>Broken wardrobe door</item>
+        <item>Excessive personal effects</item>
+        <item>Sharp edges on furniture</item>
+        <item>Dangerous tools within reach</item>
+        <item>Unstable shelving</item>
+    </string-array>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_5dp">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:id="@+id/ohScanner_Menu"
+        style="?android:textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:background="@drawable/edit_text_bg"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/margin_10dp"
+        android:singleLine="true"
+        android:tag="scan"
+        android:text="@string/choose_image"
+        android:textColor="@color/buttonBackgroundDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_5dp">
+
+        <ImageButton
+            android:id="@+id/cameraButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="@dimen/padding_20dp"
+            android:background="@color/colorWhite"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_camera" />
+
+        <ImageButton
+            android:id="@+id/galleryButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="@dimen/padding_20dp"
+            android:background="@color/colorWhite"
+            android:scaleType="fitCenter"
+            android:src="@drawable/selector_gallery" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/uploadedImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:src="@drawable/default_profile" />
+
+    <Button
+        android:id="@+id/uploadImageButton"
+        style="@style/buttonStyle"
+        android:layout_width="193dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="@dimen/margin_15dp"
+        android:text="@string/action_upload" />
+</LinearLayout>

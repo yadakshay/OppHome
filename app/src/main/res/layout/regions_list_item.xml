@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:id="@+id/region_list_linear_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/list_item_white_bg"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvRegionName"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/regionSelectedImageView"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="test"
+            android:textSize="@dimen/margin_15dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/regionSelectedImageView"
+            android:layout_width="@dimen/padding_30dp"
+            android:layout_height="@dimen/padding_30dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/margin_10dp"
+            android:src="@drawable/icon_region_list_arrow"    android:foregroundGravity="center_vertical"/>
+        <!--  android:textColor="@color/grey_very_light" -->
+
+    </RelativeLayout>
+</LinearLayout>

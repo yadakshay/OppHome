@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eaecee"
+    android:gravity="center_horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/hot_prop_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/hotPropTextView"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:paddingTop="@dimen/margin_5dp"
+            android:singleLine="true"
+            android:text="Regions"
+            android:textColor="@color/buttonBackgroundDark"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/orange_line" />
+    </LinearLayout>
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_hot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hot_prop_header"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/linear_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorGrey"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/login_logo_faded" android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/horizontal_scroll_saved_search"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/savedPropTextView"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/margin_5dp"
+            android:paddingTop="@dimen/margin_5dp"
+            android:singleLine="true"
+            android:text="Regions"
+            android:textColor="@color/buttonBackgroundDark"
+           />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/orange_line" />
+    </LinearLayout>
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_saved_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" android:paddingBottom="@dimen/margin_5dp">
+
+        <LinearLayout
+            android:id="@+id/linear_saved_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorGrey"
+            android:orientation="horizontal"></LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

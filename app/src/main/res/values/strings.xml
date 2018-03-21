@@ -1,0 +1,328 @@
+<resources>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDGVWFNoxbm-zTNSmXMcOfCzp1CIRccx8U</string>
+    <string name="app_name">OpenHome</string>
+    <string name="registration_type">Registration Type</string>
+    <string name="permissions">Permissions</string>
+    <string name="permission_deny_message">Please allow the app to access Camera, Calendar, Contacts and Write to external storage permissions to perform to its best. You can always go back to device settings and change permissions.</string>
+    <!-- Titles -->
+    <string name="title_login">Login</string>
+    <string name="title_registration_public">Public Registration</string>
+    <string name="title_registration_agent">Agent Registration</string>
+    <string name="title_dashboard">Home</string>
+    <string name="title_property_details">Property Details</string>
+    <string name="title_oh_scanner">Open Home Scanner</string>
+    <string name="title_total_listings">Total Listings</string>
+    <string name="title_current_listings">Current Listings</string>
+    <string name="title_archived_listings">Archived Listings</string>
+    <string name="title_profile_image_upload">Upload Profile Image</string>
+    <string name="title_search">Search</string>
+    <string name="title_watchlist">Watchlist</string>
+    <string name="title_profile">My Profile</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_add_property">Add Listings</string>
+    <string name="title_open_home">Open Home</string>
+    <string name="title_forgot_password">Forgot Password</string>
+    <string name="title_change_password">Change Password</string>
+    <string name="title_privacy_policy">Privacy Policy</string>
+    <string name="title_nearby_openhomes">Near by Open Homes</string>
+    <string name="title_visitor_registration">Visitor Registration</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email Address</string>
+    <string name="prompt_password">Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_change_password">Change Password</string>
+    <string name="action_upload">Upload</string>
+    <string name="action_register">Register</string>
+    <string name="action_forgot_password">Forgot Your Password ?</string>
+    <string name="action_select_date_time">Select</string>
+    <string name="action_add_property">Add Property</string>
+    <string name="action_submit">Submit</string>
+    <string name="action_add_to_watchlist">Add to Watchlist</string>
+    <string name="action_visit_openhome">Visit Openhome</string>
+    <string name="action_req_more_information">More Information</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_moveto_archive">Move to Archive</string>
+    <string name="action_delete_property">Delete Property</string>
+
+    <string name="prompt_selected_date">Expiry Date (click to select)</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_field_cfmpwd">Password and Confirm Password should match</string>
+    <string name="error_field_newpwd">New Password should not be same as old password.</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="prompt_security_guidelines">Security Guidelines</string>
+
+    <string name="prompt_new_password">New Password</string>
+    <string name="prompt_confirm_new_password">Confirm New Password</string>
+
+    <!-- Strings related to registration -->
+    <string name="prompt_firstname">First Name</string>
+    <string name="prompt_lastname">Last Name</string>
+    <string name="prompt_license_number">Licence Number</string>
+    <string name="prompt_license_class">Licence Class</string>
+    <string name="prompt_license_type">Licence Type</string>
+    <string name="prompt_search_propmt">Search Open Home...</string>
+    <string name="prompt_agency">Agency</string>
+    <string name="prompt_branch">Branch</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_confirm_password">Confirm Password</string>
+    <string name="licensed_check">Are you a licensed sales person REAA 2008 ?</string>
+    <string name="expiry_date">Expiry Date</string>
+
+
+    <!-- Strings related to add property -->
+    <string name="prompt_short_desc">Listing Title</string>
+    <string name="prompt_description">Please enter Property Details</string>
+    <string name="prompt_bedrooms">Bedrooms</string>
+    <string name="prompt_bathrooms">Bathrooms</string>
+    <string name="prompt_floor_area">Floor Area</string>
+    <string name="prompt_land_area">Land Area</string>
+    <string name="prompt_parking">Parking or Garaging</string>
+    <string name="prompt_address">Address</string>
+    <string name="prompt_street_no">Street #</string>
+    <string name="prompt_unit_flat">Unit/Flat</string>
+    <string name="prompt_street_name">Street Name</string>
+    <string name="prompt_price">Rateable Value (RV)</string>
+    <string name="prompt_viewing_time">Touch to add viewing time</string>
+    <string name="prompt_choose_category">Choose Category</string>
+    <string name="prompt_date">Date</string>
+
+    <string name="oh_scanner_menu">Open Home Scanner</string>
+    <string name="oh_current_listings_menu">Current Listings</string>
+    <string name="oh_archived_listings_menu">Archived Listings</string>
+
+    <string name="oh_switch_user">Switch User</string>
+    <string name="oh_near_By_openhomes">Near By Open Homes</string>
+    <string name="oh_logout">Logout</string>
+    <string name="oh_change_password">Change Password</string>
+    <string name="oh_privacy_policy">Privacy Policy</string>
+    <string name="choose_image">Choose Profile Image from</string>
+
+    <string-array name="lisc_type_values">
+        <item>Licence Type</item>
+        <item>Individual</item>
+        <item>Company</item>
+    </string-array>
+
+    <string-array name="lisc_class_values">
+        <item>Licence Class</item>
+        <item>Agent</item>
+        <item>Sales Person</item>
+    </string-array>
+
+    <string-array name="bedroom_values">
+        <item>Bedrooms</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6+</item>
+    </string-array>
+
+    <string-array name="bathroom_values">
+        <item>Bathrooms</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6+</item>
+    </string-array>
+
+    <string-array name="property_category">
+        <item>Choose Property Type...</item>
+        <item>Residential</item>
+        <item>Commercial</item>
+        <item>Rural</item>
+        <item>Retirement Villages</item>
+    </string-array>
+
+    <string-array name="refine_property_category">
+        <item>Any</item>
+        <item>Residential</item>
+        <item>Commercial</item>
+        <item>Rural</item>
+        <item>Retirement Villages</item>
+    </string-array>
+
+    <string-array name="regions">
+        <item>Choose Region...</item>
+    </string-array>
+
+    <string-array name="methodOfSale">
+        <item>Choose method of sale</item>
+        <item>Asking Price</item>
+        <item>Enquiries over</item>
+        <item>To be auctioned on</item>
+        <item>Price by negotiation</item>
+    </string-array>
+
+
+    <string-array name="districts">
+        <item>Choose District...</item>
+    </string-array>
+
+    <string-array name="suburb">
+        <item>Choose Suburb...</item>
+    </string-array>
+
+    <!-- Tabs -->
+    <string name="tab1_title">Home</string>
+    <string name="tab1_public_title">In the Area</string>
+    <string name="tab2_title">Search</string>
+    <string name="tab3_title">Watchlist</string>
+    <string name="tab4_title">Profile</string>
+    <string name="tab5_title">Settings</string>
+    <string name="tab2_agent_title">Add</string>
+    <string name="tab3_agent_title">OH</string>
+
+    <string name="success">Success</string>
+
+    <string name="view_listings">View Listings</string>
+
+    <!--Dialog action titles-->
+    <string name="dialog.action.ok">OK</string>
+    <string name="dialog.action.try.again">TRY AGAIN</string>
+    <string name="dialog.action.proceed">PROCEED</string>
+    <string name="dialog.action.cancel">CANCEL</string>
+    <string name="dialog.action.yes">YES</string>
+    <string name="dialog.action.no">NO</string>
+    <string name="dialog.action.Accept">Accept</string>
+    <string name="dialog.action.Reject">Decline</string>
+
+
+    <string name="registrationSuccessMsg">Thanks for registering with Open Home! We have sent a conformation email to the email address provided. Please click on the link in the email to verify your account and then away you go!</string>
+    <string name="thank_you">THANK YOU</string>
+    <string name="no_results">No Results</string>
+    <string name="error">ERROR</string>
+    <string name="try_again">Try Again</string>
+    <string name="code_result">Scanned Code Result</string>
+    <string name="propert_Hazard_select">Please Select the current property and go through the hazards</string>
+    <string name="action_visitor_register">Visitor Register</string>
+    <string name="title_registration_visitor">Visitor Registration</string>
+    <string name="newHomeBuyer">Are you a New Home Buyer</string>
+    <string name="investor">Are you an Investor</string>
+    <string name="firstHome">Are you First Home Buyer</string>
+    <string name="prompt_phone">Phone No</string>
+
+    <string-array name="refine_price">
+        <item>Any</item>
+        <item>$100k</item>
+        <item>$150k</item>
+        <item>$200k</item>
+        <item>$250k</item>
+        <item>$300k</item>
+        <item>$350k</item>
+        <item>$400k</item>
+        <item>$450k</item>
+        <item>$500k</item>
+        <item>$550k</item>
+        <item>$600k</item>
+        <item>$650k</item>
+        <item>$700k</item>
+        <item>$750k</item>
+        <item>$800k</item>
+        <item>$850k</item>
+        <item>$900k</item>
+        <item>$950k</item>
+        <item>$1M</item>
+        <item>$1.25M</item>
+        <item>$1.5M</item>
+        <item>$2M</item>
+        <item>$3M</item>
+        <item>$5M</item>
+        <item>$10M</item>
+    </string-array>
+
+    <string-array name="refine_bathrooms_bedrooms">
+        <item>Any</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6+</item>
+    </string-array>
+
+    <string-array name="oh_timings">
+        <item>07:00 AM</item>
+        <item>07:15 AM</item>
+        <item>07:30 AM</item>
+        <item>07:45 AM</item>
+        <item>08:00 AM</item>
+        <item>08:15 AM</item>
+        <item>08:30 AM</item>
+        <item>08:45 AM</item>
+        <item>09:00 AM</item>
+        <item>09:15 AM</item>
+        <item>09:30 AM</item>
+        <item>09:45 AM</item>
+        <item>10:00 AM</item>
+        <item>10:15 AM</item>
+        <item>10:30 AM</item>
+        <item>10:45 AM</item>
+        <item>11:00 AM</item>
+        <item>11:15 AM</item>
+        <item>11:30 AM</item>
+        <item>11:45 AM</item>
+        <item>12:00 PM</item>
+        <item>12:15 PM</item>
+        <item>12:30 PM</item>
+        <item>12:45 PM</item>
+        <item>01:00 PM</item>
+        <item>01:15 PM</item>
+        <item>01:30 PM</item>
+        <item>01:45 PM</item>
+        <item>02:00 PM</item>
+        <item>02:15 PM</item>
+        <item>02:30 PM</item>
+        <item>02:45 PM</item>
+        <item>03:00 PM</item>
+        <item>03:15 PM</item>
+        <item>03:30 PM</item>
+        <item>03:45 PM</item>
+        <item>04:00 PM</item>
+        <item>04:15 PM</item>
+        <item>04:30 PM</item>
+        <item>04:45 PM</item>
+        <item>05:00 PM</item>
+        <item>05:15 PM</item>
+        <item>05:30 PM</item>
+        <item>05:45 PM</item>
+        <item>06:00 PM</item>
+        <item>06:15 PM</item>
+        <item>06:30 PM</item>
+        <item>06:45 PM</item>
+        <item>07:00 PM</item>
+        <item>07:15 PM</item>
+        <item>07:30 PM</item>
+        <item>07:45 PM</item>
+        <item>08:00 PM</item>
+        <item>08:15 PM</item>
+        <item>08:30 PM</item>
+        <item>08:45 PM</item>
+        <item>09:00 PM</item>
+    </string-array>
+
+    <string-array name="sortByOptions">
+        <item>Choose Sort by...</item>
+        <item>Featured First</item>
+        <item>Price Lowest</item>
+        <item>Price Higest</item>
+        <item>Latest Listings</item>
+    </string-array>
+</resources>

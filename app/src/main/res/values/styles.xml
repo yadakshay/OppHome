@@ -1,0 +1,228 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="MyAppMaterialTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyAppMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- you should set typeface which you want to override with TypefaceUtil -->
+        <item name="android:typeface">normal</item>
+        <!--<item name="android:spinnerDropDownItemStyle">@style/mySpinnerItemStyle</item> -->
+    </style>
+
+    <style name="datePickerStyle" parent="MyAppMaterialTheme.Base">
+        <item name="android:divider">@color/colorOrange</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorOrange</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/edit_text_bg</item>
+        <item name="android:layout_height">@dimen/padding_45dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="mySpinnerItemStyle_50" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/edit_text_bg</item>
+        <item name="android:layout_height">@dimen/padding_45dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="mySpinnerItemStyle_40" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/edit_text_bg</item>
+        <item name="android:layout_height">@dimen/padding_40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="editTextStyle" parent="MyAppMaterialTheme.Base">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/edit_text_bg</item>
+        <item name="android:textColor">@color/buttonBackgroundDark</item>
+        <item name="android:layout_height">@dimen/padding_40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/margin_5dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_5dp</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:paddingBottom">@dimen/padding_3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="editTextDialogStyle" parent="MyAppMaterialTheme.Base">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/edit_text_bg</item>
+        <item name="android:textColor">@color/buttonBackgroundDark</item>
+        <item name="android:layout_height">@dimen/padding_40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:paddingBottom">@dimen/padding_3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="editTextSmallStyle" parent="MyAppMaterialTheme.Base">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/edit_text_bg</item>
+        <item name="android:textColor">@color/buttonBackgroundDark</item>
+        <item name="android:layout_height">@dimen/padding_40dp</item>
+        <item name="android:paddingRight">@dimen/margin_15dp</item>
+        <item name="android:paddingLeft">@dimen/margin_15dp</item>
+        <item name="android:paddingBottom">@dimen/padding_3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="searchStyle" parent="MyAppMaterialTheme.Base">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/edit_text_bg</item>
+        <item name="android:textColor">@color/buttonBackgroundDark</item>
+        <item name="android:layout_height">@dimen/padding_35dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:drawableLeft">@drawable/search</item>
+        <item name="android:paddingLeft">@dimen/padding_10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="textAreaStyle" parent="MyAppMaterialTheme.Base">
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/shape_edit_text</item>
+        <item name="android:textColor">@color/buttonBackgroundDark</item>
+        <item name="android:layout_height">@dimen/padding_40dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/margin_5dp</item>
+        <item name="android:layout_marginBottom">@dimen/padding_10dp</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lines">5</item>
+        <item name="android:maxLines">20</item>
+    </style>
+
+    <style name="buttonStyle" parent="MyAppMaterialTheme.Base">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@drawable/shape_button</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_height">@dimen/padding_40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/margin_5dp</item>
+        <item name="android:layout_marginBottom">@dimen/padding_10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="buttonStyle2" parent="MyAppMaterialTheme.Base">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:layout_height">@dimen/padding_40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/margin_5dp</item>
+        <item name="android:layout_marginBottom">@dimen/padding_10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="searchViewStyle" parent="MyAppMaterialTheme.Base">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/buttonBackgroundDark</item>
+        <item name="android:textColorHint">@color/buttonBackgroundDark</item>
+        <item name="android:layout_height">@dimen/padding_40dp</item>
+        <item name="android:layout_width">250dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="detailsTextViewHeader" parent="MyAppMaterialTheme.Base">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/buttonBackgroundDark</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">@dimen/margin_5dp</item>
+    </style>
+
+    <style name="detailsTextView" parent="MyAppMaterialTheme.Base">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/buttonBackgroundDark</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingLeft">@dimen/margin_5dp</item>
+    </style>
+
+    <style name="detailsTextViewHeaderSmall" parent="MyAppMaterialTheme.Base">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/buttonBackgroundDark</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingLeft">@dimen/margin_5dp</item>
+    </style>
+
+    <style name="detailsLayoutContentStyle" parent="MyAppMaterialTheme.Base">
+        <item name="android:background">@drawable/line_2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/margin_5dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="profileEditHintStyle" parent="MyAppMaterialTheme.Base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:background">@color/colorGrey</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="hazardTVStyle" parent="MyAppMaterialTheme.Base">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/padding_45dp</item>
+        <item name="android:paddingLeft">@dimen/margin_5dp</item>
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+</resources>

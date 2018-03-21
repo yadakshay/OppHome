@@ -1,0 +1,423 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <!-- registration_lisc progress -->
+        <ProgressBar
+            android:id="@+id/registration_lisc_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:id="@+id/registration_lisc_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/add_property_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addPropertyWelcomeNote"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:text="Please enter property details."
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/property_type_spinner"
+                    style="@style/mySpinnerItemStyle"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:entries="@array/property_category" />
+
+
+                <EditText
+                    android:id="@+id/property_short_description"
+                    style="@style/editTextStyle"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:hint="@string/prompt_short_desc"
+                    android:inputType="text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/property_street_no"
+                        style="@style/editTextSmallStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.5"
+                        android:hint="@string/prompt_street_no"
+                        android:inputType="text"
+                        android:minLines="1" />
+
+                    <EditText
+                        android:id="@+id/property_unit_flat"
+                        style="@style/editTextSmallStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.5"
+                        android:hint="@string/prompt_unit_flat"
+                        android:inputType="text"
+                        android:minLines="1" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/property_street_name"
+                    style="@style/editTextSmallStyle"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:hint="@string/prompt_street_name"
+                    android:inputType="text"
+                    android:minLines="1" />
+
+
+                <Spinner
+                    android:id="@+id/property_region_spinner"
+                    style="@style/mySpinnerItemStyle_50"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:entries="@array/regions" />
+
+                <Spinner
+                    android:id="@+id/property_district_spinner"
+                    style="@style/mySpinnerItemStyle_50"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:entries="@array/districts" />
+
+                <Spinner
+                    android:id="@+id/property_suburb_spinner"
+                    style="@style/mySpinnerItemStyle_50"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:entries="@array/suburb" />
+
+                <EditText
+                    android:id="@+id/property_price"
+                    style="@style/editTextStyle"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:drawableLeft="@drawable/icon_dollar"
+                    android:drawablePadding="@dimen/margin_10dp"
+                    android:hint="@string/prompt_price"
+                    android:inputType="number" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/property_bedroooms"
+                        style="@style/mySpinnerItemStyle_50"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.5"
+                        android:entries="@array/bedroom_values" />
+
+                    <Spinner
+                        android:id="@+id/property_bathrooms"
+                        style="@style/mySpinnerItemStyle_50"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.5"
+                        android:entries="@array/bathroom_values" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/property_floor_area"
+                        style="@style/editTextStyle"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.5"
+                        android:hint="@string/prompt_floor_area"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/property_land_area"
+                        style="@style/editTextStyle"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.5"
+                        android:hint="@string/prompt_land_area"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/property_parking"
+                    style="@style/editTextStyle"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:hint="@string/prompt_parking"
+                    android:inputType="text" />
+
+                <Spinner
+                    android:id="@+id/property_methodofsale"
+                    style="@style/mySpinnerItemStyle_50"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:entries="@array/methodOfSale" />
+
+                <EditText
+                    android:id="@+id/property_methodofsalevalue"
+                    style="@style/editTextStyle"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:layout_weight="0.5"
+                    android:hint="@string/prompt_land_area"
+                    android:inputType="text" android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/property_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:background="@drawable/edit_text_bg"
+                    android:gravity="top"
+                    android:hint="@string/prompt_description"
+                    android:inputType="text|textMultiLine" />
+
+                <TextView
+                    android:id="@+id/addViewingTimesText"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/padding_3dp"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Open Home Times"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+                <!-- Viewing Times 1-->
+                <LinearLayout
+                    android:id="@+id/viewingLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/oh_date1"
+                        style="@style/editTextStyle"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:hint="@string/prompt_date"
+                        android:inputType="text" />
+
+                    <Spinner
+                        android:id="@+id/oh_start_time1"
+                        style="@style/mySpinnerItemStyle_40"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:entries="@array/oh_timings" />
+
+                    <Spinner
+                        android:id="@+id/oh_end_time1"
+                        style="@style/mySpinnerItemStyle_40"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:entries="@array/oh_timings" />
+
+                </LinearLayout>
+                <!-- Viewing Times 2-->
+                <LinearLayout
+                    android:id="@+id/viewingLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/oh_date2"
+                        style="@style/editTextStyle"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:hint="@string/prompt_date"
+                        android:inputType="text" />
+
+                    <Spinner
+                        android:id="@+id/oh_start_time2"
+                        style="@style/mySpinnerItemStyle_40"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:entries="@array/oh_timings" />
+
+                    <Spinner
+                        android:id="@+id/oh_end_time2"
+                        style="@style/mySpinnerItemStyle_40"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:entries="@array/oh_timings" />
+
+                </LinearLayout>
+                <!-- Viewing Times 3 -->
+                <LinearLayout
+                    android:id="@+id/viewingLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/oh_date3"
+                        style="@style/editTextStyle"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:hint="@string/prompt_date"
+                        android:inputType="text" />
+
+                    <Spinner
+                        android:id="@+id/oh_start_time3"
+                        style="@style/mySpinnerItemStyle_40"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:entries="@array/oh_timings" />
+
+                    <Spinner
+                        android:id="@+id/oh_end_time3"
+                        style="@style/mySpinnerItemStyle_40"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:entries="@array/oh_timings" />
+
+                </LinearLayout>
+
+                <!-- Viewing Times 4 -->
+                <LinearLayout
+                    android:id="@+id/viewingLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/oh_date4"
+                        style="@style/editTextStyle"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:hint="@string/prompt_date"
+                        android:inputType="text" />
+
+                    <Spinner
+                        android:id="@+id/oh_start_time4"
+                        style="@style/mySpinnerItemStyle_40"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:entries="@array/oh_timings" />
+
+                    <Spinner
+                        android:id="@+id/oh_end_time4"
+                        style="@style/mySpinnerItemStyle_40"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:entries="@array/oh_timings" />
+
+                </LinearLayout>
+
+                <!-- Viewing Times 5 -->
+                <LinearLayout
+                    android:id="@+id/viewingLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/oh_date5"
+                        style="@style/editTextStyle"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:hint="@string/prompt_date"
+                        android:inputType="text" />
+
+                    <Spinner
+                        android:id="@+id/oh_start_time5"
+                        style="@style/mySpinnerItemStyle_40"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:entries="@array/oh_timings" />
+
+                    <Spinner
+                        android:id="@+id/oh_end_time5"
+                        style="@style/mySpinnerItemStyle_40"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_weight="0.3"
+                        android:entries="@array/oh_timings" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/margin_10dp">
+
+                    <ImageView
+                        android:id="@+id/icon_minus"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="left"
+                        android:clickable="true"
+                        android:src="@drawable/icon_minus" />
+
+                    <ImageView
+                        android:id="@+id/icon_plus"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="right"
+                        android:clickable="true"
+                        android:src="@drawable/icon_plus" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/property_image"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true" android:src="@drawable/image_placeholder" />
+
+                <Button
+                    android:id="@+id/add_property_button"
+                    style="@style/buttonStyle"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/action_submit" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

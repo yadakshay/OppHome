@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ECC300</color>
+    <color name="colorPrimaryDark">#19385F</color>
+    <color name="colorAccent">#EABC00</color>
+
+    <color name="colorOrange">#EABC00</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="textColorPrimary">#19385F</color>
+    <color name="windowBackground">#FFFFFF</color>
+
+    <color name="buttonBackgroundDark">#19385F</color>
+    <color name="buttonText">#FFFFFF</color>
+
+    <color name="colorGrey">#eaecee</color>
+
+    <color name="colorBlue">#FF3B7ED2</color>
+    <color name="colorBlueLight">#3872ba</color>
+
+    <color name="colorPrimary_5_Opaque">#0DECC300</color>
+    <color name="colorPrimary_15_Opaque">#26ECC300</color>
+</resources>

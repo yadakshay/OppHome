@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/registration_lisc_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/margin_10dp">
+
+        <LinearLayout
+            android:id="@+id/email_registration_lisc_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/welcomeNote"
+                style="?android:textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:id="@+id/profileThumbnail"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_10dp"
+                app:siBorderColor="@color/colorWhite"
+                app:siBorderWidth="@dimen/margin_2dp" />
+
+
+            <TextView
+                android:id="@+id/qrImageText"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/tv_selector"
+                android:clickable="true"
+                android:drawablePadding="@dimen/margin_10dp"
+                android:drawableRight="@drawable/icon_qr_code"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/margin_15dp"
+                android:paddingRight="@dimen/margin_10dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="My QR Code"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/profile_image"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:background="@color/colorPrimaryDark"
+                android:padding="3dp"
+                android:src="@drawable/default_profile"
+                android:visibility="gone" />
+
+            <TextView
+                style="@style/profileEditHintStyle"
+                android:text="@string/prompt_firstname" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGrey"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/firstName"
+                    style="@style/editTextStyle"
+                    android:hint="@string/prompt_firstname"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/profileEditHintStyle"
+                    android:text="@string/prompt_lastname" />
+
+                <EditText
+                    android:id="@+id/lastName"
+                    style="@style/editTextStyle"
+                    android:hint="@string/prompt_lastname"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/profileEditHintStyle"
+                    android:text="@string/prompt_email" />
+
+                <EditText
+                    android:id="@+id/regemail"
+                    style="@style/editTextStyle"
+                    android:hint="@string/prompt_email"
+                    android:imeActionId="@+id/registration_lisc"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/profileEditHintStyle"
+                    android:text="@string/prompt_license_number" android:id="@+id/hintLicNum"/>
+
+                <EditText
+                    android:id="@+id/liscenseNumber"
+                    style="@style/editTextStyle"
+                    android:hint="@string/prompt_license_number"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/profileEditHintStyle"
+                    android:text="@string/prompt_license_type"  android:id="@+id/hintLicTyp" />
+
+                <Spinner
+                    android:id="@+id/license_type_spinner"
+                    style="@style/mySpinnerItemStyle"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:entries="@array/lisc_type_values" />
+
+
+                <TextView
+                    style="@style/profileEditHintStyle"
+                    android:text="@string/prompt_license_class"  android:id="@+id/hintLicClass"/>
+
+                <Spinner
+                    android:id="@+id/license_class_spinner"
+                    style="@style/mySpinnerItemStyle"
+                    android:layout_marginLeft="@dimen/margin_15dp"
+                    android:layout_marginRight="@dimen/margin_15dp"
+                    android:entries="@array/lisc_class_values" />
+
+
+                <TextView
+                    style="@style/profileEditHintStyle"
+                    android:text="@string/expiry_date"  android:id="@+id/hintExpDate"/>
+
+                <LinearLayout
+                    android:id="@+id/expiry_date_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/selected_date"
+                        style="@style/editTextStyle"
+                        android:editable="false"
+                        android:hint="Expiry Date"
+                        android:inputType="text"
+                        android:onClick="showDatePickerDialog" />
+
+
+                    <!--   <Button
+                           android:id="@+id/expiry_date"
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           android:text="@string/expiry_date"
+                           android:onClick="showDatePickerDialog" android:layout_weight="1"/>-->
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/profileEditHintStyle"
+                    android:text="@string/prompt_agency"  android:id="@+id/hintAgency"/>
+
+                <EditText
+                    android:id="@+id/agency"
+                    style="@style/editTextStyle"
+                    android:hint="@string/prompt_agency"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/profileEditHintStyle"
+                    android:text="@string/prompt_branch"  android:id="@+id/hintBranch"/>
+
+
+                <EditText
+                    android:id="@+id/branch"
+                    style="@style/editTextStyle"
+                    android:hint="@string/prompt_branch"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/profileEditHintStyle"
+                    android:text="@string/prompt_username" />
+
+
+                <EditText
+                    android:id="@+id/username"
+                    style="@style/editTextStyle"
+                    android:hint="@string/prompt_username"
+                    android:inputType="text" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_password"
+                        android:imeActionId="@+id/registration_lisc"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/confirmPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/prompt_confirm_password"
+                        android:imeActionId="@+id/registration_lisc"
+                        android:imeActionLabel="@string/action_sign_in_short"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:visibility="gone" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/edit_profile_button"
+                    style="@style/buttonStyle"
+                    android:layout_width="193dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/action_edit" />
+
+                <LinearLayout
+                    android:id="@+id/cancel_save_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/cancel_save_profile_button"
+                        style="@style/buttonStyle"
+                        android:layout_width="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/action_cancel" />
+
+                    <Button
+                        android:id="@+id/save_profile_button"
+                        style="@style/buttonStyle"
+                        android:layout_width="150dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_weight="0.5"
+                        android:text="@string/action_save" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/qrCode"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:padding="3dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

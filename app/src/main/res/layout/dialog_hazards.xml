@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hazardsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/padding_10dp" android:orientation="vertical">
+    <TextView
+        android:id="@+id/hazardsLayoutHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_45dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/dialog_bg"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Security Hazards"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView_Parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/property_submit_after_hazards"
+        android:layout_below="@+id/hazardsLayoutHeader"
+        android:groupIndicator="@null" android:layout_weight="1" android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/property_submit_after_hazards"
+        style="@style/buttonStyle"
+        android:layout_width="193dp"
+        android:layout_alignParentBottom="true"
+        android:drawablePadding="@dimen/margin_15dp"
+        android:text="@string/action_submit" android:layout_gravity="center_horizontal" android:gravity="center_horizontal" />
+
+
+</LinearLayout>
